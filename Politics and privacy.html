@@ -22,10 +22,20 @@
     
 </head>
 <body>
-	<!--Link whatsapp-->
-	<a class="whatsapp-link" href="https://wa.me/message/TRLAOJIW7255N1" target="_blank">
-				<i class="fa fa-whatsapp"></i>
-			</a>
+	 <!--Link whatsapp-->
+    <!--
+    <a class="whatsapp-link" href="https://wa.me/message/TRLAOJIW7255N1" target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+-->
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="Bem Vindo"
+  chat-title="AppetUai"
+  agent-id="38c977ae-cd51-4402-85c3-3bbb3fa16bd1"
+  language-code="pt-br"
+></df-messenger>
 
 
 	
@@ -41,8 +51,10 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="empresa.html"> Cadastre sua Empresa</a></li>
 						<li><a href="sobre.html">Sobre Nós</a></li>
-					<li><a href="login.html">login</a></li>
+					<li><a href="login.html">Entrar | Cadastrar</a></li>
+                    <!-- Removido para atualição de diagrama
                     <li><a href="condutor.html">Seja um motoboy</a></li>
+                -->
 				</ul>
 				</div>
 			</nav>

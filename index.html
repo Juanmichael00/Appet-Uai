@@ -5,8 +5,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barra de Pesquisa</title>
+    <title>Carrinho</title>
     <!--Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Bootstrap css-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">  
 	<!--js bootstrap-->
@@ -18,14 +20,31 @@
 	<!--Font awesome-->
 	<script src="https://kit.fontawesome.com/995ce5eeea.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/le592b5726.js" crossorigin="anonymous"></script>
+<!--Para carrinho de compras -->
+    
+    
+
 
     
 </head>
 <body>
 	<!--Link whatsapp-->
+    <!--
 	<a class="whatsapp-link" href="https://wa.me/message/TRLAOJIW7255N1" target="_blank">
 				<i class="fa fa-whatsapp"></i>
 			</a>
+-->
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="Bem Vindo"
+  chat-title="AppetUai"
+  agent-id="38c977ae-cd51-4402-85c3-3bbb3fa16bd1"
+  language-code="pt-br"
+></df-messenger>
+
+
+
 
 
 	
@@ -39,17 +58,26 @@
 					
 					<ul>
 						
-						<li><a href="empresa.html"> Cadastre sua Empresa</a></li>
+						<li><a href="empresa.html"> Sua Empresa</a></li>
 						<li><a href="sobre.html">Sobre Nós</a></li>
-					<li><a href="login.html">login</a></li>
-                    <li><a href="condutor.html">Seja um motoboy</a></li>
-                    <li><a href="Politics and privacy.html">Politica e Privacidade</a></li>
+                        <li><a href="Politics and privacy.html">Politica e Privacidade</a></li>
+                        <li><a href="login.html">Entrar | Cadastrar</a></li>
+                    <!-- Removido para atualição de diagrama
+                    <li><a href="condutor.html">Seja um motoboy</a></li>-->
+                     <a class="search-btn" href="cart.html">
+                     <i class="fas fa-shopping-cart"></i>
+                 </a>
+
+
+                    
+
 				</ul>
 
              <div class="search-box">
                 <input type="search-txt" name=""placeholder="Faça a sua Pesquisa">
                 <a class="search-btn" href="#">
                     <i class="fas fa-search"></i>
+                    
                 </a>
                 
             </div>
@@ -814,7 +842,7 @@ v			<div id="main-banner">
                             <h2>Informações</h2>
                             <ul>
                                 <li><a href="sobre.html">Sobre</a></li>
-                                <li><a href="#">Política e Privacidade</a></li>
+                                <li><a href="Politics and privacy.html">Política e Privacidade</a></li>
                                 <li><a href="#">Termos e Condições</a></li>
                             </ul>
                         </div>
